@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flashcard_css.css">
+    <title>Flashcard</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h1>Flashcard</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="create_box">
+            <h2 style="text-align: center; color: black;">Create Your own Flashcard</h2>
+            <label for="question">Question</label>
+            <textarea id="question" placeholder="Enter question"></textarea>
+
+            <label for="answer">Answer</label>
+            <textarea id="answer" placeholder="Enter Answer"></textarea>
+
+            <div class="function">
+                <button onclick="add_flashcard()">Add</button>
+                <button onclick="hide_flashcard()">Remove</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-container">
+
+        <button class="slider-button left" onclick="moveSlide(-1)">&#10094;</button>
+        <div id="flashcards-container" class="flashcards-container">
+
+        </div>
+        <button class="slider-button right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script src="flashcard_js.js"></script>
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="returnToMain()">Return to Main Page</button>
+    </div>
+</body>
+</html>
