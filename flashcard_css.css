@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Oswald", sans-serif;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+
+    text-align: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.create_box {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    width: 550px;
+    max-width: 750px;
+}
+
+label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    text-align: center;
+}
+
+.function {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: 1px solid lightpink;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+
+.slider-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 20px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 10; 
+}
+
+.slider-button:hover {
+    background-color: rgba(198, 15, 15, 0.7);
+}
+
+
+.left {
+    position: absolute;
+    left: -40px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+
+.right {
+    position: absolute;
+    right: -40px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+
+.flashcard-slider-container {
+    position: relative;
+    width: 100%; 
+    max-width: 700px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.flashcards-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.flashcard {
+    width: 600px;
+    height: 350px;
+    margin: 0 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.flashcard-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flashcard:hover .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+.flashcard .front,
+.flashcard .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flashcard .front {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcard .back {
+    background-color: #98fb98;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10000vh;
+    width: 750px;
+    max-width: 1000px;
+    position: relative;  
+}

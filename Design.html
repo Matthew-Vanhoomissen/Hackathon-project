@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+        <link rel="Stylesheet" rhef="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .middle { 
+                position: absolute;
+                top: 50px;
+                right: 20%;
+                text-align: center; 
+                border-style:solid;
+                border-radius:16px;
+                background-color: rgb(113, 113, 193);
+                width: 1000px;
+                color:#333}
+            .button {
+                border: none;
+                color: white;
+                padding: 30px 60px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;}
+            .button1 {
+                background-color: rgb(113, 113, 193); 
+                color: black; 
+                border: 2px solid #333;
+                position:absolute;
+                right: 43%;
+                top: 550px;
+                padding: 30px 62px}
+
+            .button1:hover {
+                background-color: #04AA6D;
+                color: white;}
+            .button2 {
+                background-color: rgb(113, 113, 193);
+                color: black;
+                border: 2px solid #333;
+                position:absolute;
+                right: 43%;
+                top: 650px;
+            }
+            .button2:hover {
+                background-color: rgb(28, 28, 103);
+                color: white
+            }
+            .button3 {
+                background-color: rgb(113, 113, 193);
+                color: black;
+                border: 2px solid #333;
+                position:absolute;
+                right: 43%;
+                top: 750px;
+                padding: 30px 45px;
+            }
+            .button3:hover {
+                background-color: rgb(173, 55, 55);
+                color: white
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                background: linear-gradient(to right, #667eea, #764ba2);
+                color: #333;}
+            img {
+                height: 307px;
+                width: 422px;
+                position:absolute;
+                top: 200px;
+                
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div class="middle">
+            <h1>Hackathon Project: Clocked In</h1>
+            <h2>The #1 Best Study Tool</h2>
+        </div>
+        <img src="Hackathon_study_pic.jpg" alt="Study pic">
+        <button class="button button1" onclick="Flashcards()">Note Cards</button>
+        <button class="button button2" onclick="TimerWeb()">Study Timer</button>
+        <script>
+            function TimerWeb() {
+                window.location.href = 'TimerWeb.html';
+            }
+            function Flashcards() {
+                window.location.href = 'flashcard.html'
+            }
+    
+
+
+
+        </script>
+        
+
+
+
+    
+    
+    </body>
+</html>
