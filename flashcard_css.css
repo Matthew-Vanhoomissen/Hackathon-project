@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Pacifico&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -78,7 +79,7 @@ textarea {
 button {
     padding: 10px 15px;
     border: 1px solid lightpink;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -98,6 +99,7 @@ button:hover {
     margin: 0;
     cursor: pointer;
     z-index: 10; 
+    
 }
 
 .slider-button:hover {
@@ -150,6 +152,10 @@ button:hover {
     justify-content: center;
     align-items: center;
     perspective: 1000px;
+    font-size: 30px;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .flashcard-inner {
@@ -198,4 +204,9 @@ button:hover {
     width: 750px;
     max-width: 1000px;
     position: relative;  
+}
+.return-button {
+    position: relative;
+    text-align: center;
+    bottom: 40px
 }
